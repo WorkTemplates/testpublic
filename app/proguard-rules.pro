@@ -20,4 +20,4 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
--keep class com.goldball.app.model.** { *; }
+-keep class com.template.app.model.** { *; }

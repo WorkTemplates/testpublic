@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_splash"
-        android:name="com.goldball.app.ui.splash.SplashFragment"
+        android:name="com.template.app.ui.splash.SplashFragment"
         android:label="@string/splash_fragment_title"
         tools:layout="@layout/splash_fragment">
 
@@ -33,20 +33,20 @@
 
     <fragment
         android:id="@+id/navigation_no_access"
-        android:name="com.goldball.app.ui.noaccess.NoAccessFragment"
+        android:name="com.template.app.ui.noaccess.NoAccessFragment"
         android:label="@string/no_access_text"
         tools:layout="@layout/no_access_fragment">
     </fragment>
 
     <fragment
         android:id="@+id/navigation_main"
-        android:name="com.goldball.app.ui.main.MainFragment"
+        android:name="com.template.app.ui.main.MainFragment"
         android:label="@string/main_fragment_title"
         tools:layout="@layout/main_fragment"/>
 
     <fragment
         android:id="@+id/navigation_webview"
-        android:name="com.goldball.app.ui.webview.WebViewFragment"
+        android:name="com.template.app.ui.webview.WebViewFragment"
         android:label="@string/webview_fragment_title"
         tools:layout="@layout/webview_fragment">
         <argument
