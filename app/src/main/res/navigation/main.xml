@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/navigation_splash">
+
+    <fragment
+        android:id="@+id/navigation_splash"
+        android:name="com.goldball.app.ui.splash.SplashFragment"
+        android:label="@string/splash_fragment_title"
+        tools:layout="@layout/splash_fragment">
+
+        <action
+            android:id="@+id/action_navigation_splash_to_navigation_main"
+            app:destination="@id/navigation_main"
+            app:popUpTo="@id/navigation_splash"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_navigation_splash_to_no_access"
+            app:destination="@id/navigation_no_access"
+            app:popUpTo="@id/navigation_splash"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_navigation_splash_to_webview"
+            app:destination="@id/navigation_webview"
+            app:popUpTo="@id/navigation_splash"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_no_access"
+        android:name="com.goldball.app.ui.noaccess.NoAccessFragment"
+        android:label="@string/no_access_text"
+        tools:layout="@layout/no_access_fragment">
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_main"
+        android:name="com.goldball.app.ui.main.MainFragment"
+        android:label="@string/main_fragment_title"
+        tools:layout="@layout/main_fragment"/>
+
+    <fragment
+        android:id="@+id/navigation_webview"
+        android:name="com.goldball.app.ui.webview.WebViewFragment"
+        android:label="@string/webview_fragment_title"
+        tools:layout="@layout/webview_fragment">
+        <argument
+            android:name="url"
+            app:argType="string" />
+    </fragment>
+
+    <action android:id="@+id/action_global_navigation_webview" app:destination="@id/navigation_webview"/>
+
+
+
+</navigation>

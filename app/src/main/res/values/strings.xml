@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Goldball</string>
+
+    <string name="splash_fragment_title">Splash</string>
+    <string name="main_fragment_title">Main</string>
+    <string name="webview_fragment_title">WebView</string>
+
+    <string name="splash_fragment_loading_text">Загрузка</string>
+
+    <string name="no_access_text">Извините приложение не доступно</string>
+
+    <string name="main_about_text">Представляем вашему вниманию список футболистов, которые в последние 20 лет стали обладаталеми самого престижного трофея среди футболистов - золотого мяча.
+Золотой мяч присуждается каждый год лучшему футболисту мира по версии старейшего футбольного издания France Football, в голосовании участвуют журналисты, а также главные тренеры и капитаны национальных сборных.
+Надеемся вам понравится и вы увидите в будудщем еще более увлекательные подборки из мира футбола.</string>
+
+    <string name="main_tab_cities_title">Игроки</string>
+    <string name="main_tab_about_title">О приложении</string>
+</resources>
