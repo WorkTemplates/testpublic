@@ -31,7 +31,7 @@ class MainFragment : BaseFragment(R.layout.main_fragment) {
 
         TabLayoutMediator(tabLayout, viewPager) { tab, position ->
             when (position){
-                0 -> tab.setText(R.string.main_tab_cities_title)
+                0 -> tab.setText(R.string.main_tab_data_title)
                 1 -> tab.setText(R.string.main_tab_about_title)
             }
         }.attach()
