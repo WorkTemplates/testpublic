@@ -1,3 +1,0 @@
-[PROJECT]
-# com.это_значение.app
-package = template

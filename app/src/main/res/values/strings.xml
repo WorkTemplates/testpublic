@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name"></string>
+    <string name="app_name">Приложуха</string>
 
     <string name="splash_fragment_title">Splash</string>
     <string name="main_fragment_title">Main</string>
@@ -9,8 +9,10 @@
 
     <string name="no_access_text">Извините приложение не доступно</string>
 
-    <string name="main_about_text"></string>
+    <string name="main_about_text">
+Тут какой то текст
+Можно в несколько строк</string>
 
-    <string name="main_tab_cities_title"></string>
+    <string name="main_tab_data_title">ВАУ</string>
     <string name="main_tab_about_title">О приложении</string>
 </resources>

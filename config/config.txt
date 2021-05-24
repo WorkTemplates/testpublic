@@ -1,0 +1,32 @@
+[PROJECT]
+# com.это_значение.app
+package = template
+data_url = https://ostats-23c52-default-rtdb.europe-west1.firebasedatabase.app/GoldPlayers.json
+
+[KEYSTORE]
+NAME =
+
+[TEXT]
+app_name = Приложуха
+tab_title = ВАУ
+about_text :
+    Тут какой то текст
+    Можно в несколько строк
+
+[COLORS_DAY]
+colorPrimary = #FF6200EE
+colorPrimaryVariant = #FF3700B3
+colorOnPrimary = #FFFFFFFF
+
+colorSecondary = #FF03DAC5
+colorSecondaryVariant = #FF018786
+colorOnSecondary = #FF000000
+
+[COLORS_NIGHT]
+colorPrimary = #FFBB86FC
+colorPrimaryVariant = #FF3700B3
+colorOnPrimary = #FF000000
+
+colorSecondary = #FF03DAC5
+colorSecondaryVariant = #FF03DAC5
+colorOnSecondary = #FF000000
