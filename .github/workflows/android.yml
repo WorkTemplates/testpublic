@@ -24,6 +24,12 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew assembleRelease
       
+    - name: ls files
+      run: ls -la
+      
+    - name: ls 2
+      run: ls -la app
+      
     - name: upload artifacts
       uses: actions/upload-artifact@v2.2.3
       with:
