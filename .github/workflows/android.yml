@@ -25,10 +25,10 @@ jobs:
       run: ./gradlew assembleRelease
       
     - name: ls files
-      run: ls -la
+      run: ls -la app/build
       
     - name: ls 2
-      run: ls -la app
+      run: ls -la app/build/output
       
     - name: upload artifacts
       uses: actions/upload-artifact@v2.2.3
