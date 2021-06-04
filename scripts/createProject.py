@@ -49,7 +49,7 @@ def create_jks():
     os.system(f'keytool -genkeypair -dname "CN={keystore_name}" -alias release -keypass AWzLF2GuP9khYVLq -keystore ./config/keystore.jks -storepass AWzLF2GuP9khYVLq -validity 20000 -keyalg RSA -keysize 2048 -storetype JKS')
 
 if not os.path.isfile("./config/keystore.jks"):
-    create_jks
+    create_jks()
 else:
     result = str(subprocess.check_output(['keytool', '-list', '-keystore', './config/keystore.jks', '-alias', 'release', '-v', '-storepass', 'AWzLF2GuP9khYVLq', '-keypass', 'AWzLF2GuP9khYVLq']), 'utf-8')
     name = result.split("Owner:")[1].split("\n")[0].split("=")[1]
