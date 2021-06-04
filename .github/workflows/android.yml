@@ -23,7 +23,7 @@ jobs:
       run: chmod +x gradlew
 
     - name: createProjectFromTemplate
-      run: python ./scripts/createProject.py
+      run: python3 ./scripts/createProject.py
 
     - name: Build with Gradle
       run: ./gradlew assembleRelease
