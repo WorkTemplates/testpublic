@@ -21,15 +21,13 @@ jobs:
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
+
+    - name: createProjectFromTemplate
+      run: python ./scripts/createProject.py
+
     - name: Build with Gradle
       run: ./gradlew assembleRelease
-      
-    - name: ls files
-      run: ls -la app/build
-      
-    - name: ls 2
-      run: ls -la app/build/outputs
-      
+
     - name: upload artifacts
       uses: actions/upload-artifact@v2.2.3
       with:
