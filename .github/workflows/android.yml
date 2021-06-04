@@ -25,7 +25,7 @@ jobs:
       run: python3 ./scripts/createProject.py
     
     - name: commit jks
-    - uses: EndBug/add-and-commit@v7 # You can change this to use a specific version
+      uses: EndBug/add-and-commit@v7 # You can change this to use a specific version
       with:
         add: './config/keystore.jks'
         author_name: workflow
