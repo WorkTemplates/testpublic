@@ -54,7 +54,7 @@ for dname, dirs, files in os.walk(f"{path}/src/main/java/com"):
                 return s
             replace(fpath, replace_function)
 
-replace(f"{path}/src/main/java/com/{package}/app/network/Dataretrofit.kt",
+replace(f"{path}/src/main/java/com/{package}/app/network/DataRetrofit.kt",
         lambda x: x.replace("@GET(\"url\")", f"@GET(\"{data_url}\")"))
 
 #navigation
