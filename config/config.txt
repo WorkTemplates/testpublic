@@ -4,7 +4,7 @@ package = template
 data_url = https://ostats-23c52-default-rtdb.europe-west1.firebasedatabase.app/GoldPlayers.json
 
 [KEYSTORE]
-NAME =
+name = ANDREI IVANOV
 
 [TEXT]
 app_name = Приложуха

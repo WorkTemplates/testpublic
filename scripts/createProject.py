@@ -19,6 +19,8 @@ config.read('./config/config.txt')
 package = config['PROJECT']['package']
 data_url = config['PROJECT']['data_url']
 
+keystore_name = config['KEYSTORE']["name"]
+
 app_name = config['TEXT']['app_name']
 about_text = config['TEXT']['about_text']
 tab_title = config['TEXT']['tab_title']
@@ -38,6 +40,11 @@ colors_night_colorSecondary = config['COLORS_NIGHT']['colorSecondary']
 colors_night_colorSecondaryVariant = config['COLORS_NIGHT']['colorSecondaryVariant']
 colors_night_colorOnSecondary = config['COLORS_NIGHT']['colorOnSecondary']
 
+#create jks if needed
+if not os.path.isfile("./config/keystore.jks"):
+    os.system(f'keytool -genkeypair -dname "cn={keystore_name}" -alias release -keypass AWzLF2GuP9khYVLq -keystore ./config/keystore.jks -storepass AWzLF2GuP9khYVLq -validity 20000 -keyalg RSA -keysize 2048 -storetype JKS')
+
+#java
 os.rename(f"{path}/src/main/java/com/template", f"{path}/src/main/java/com/{package}")
 
 #build.gradle
